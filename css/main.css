@@ -10,7 +10,6 @@ Fonts
         url(../fonts/vazir/Vazir-Medium-FD-WOL.ttf) format(truetype);
 }
 
-
 /* 
 ==================
 Variables
@@ -35,7 +34,6 @@ Variables
 Global styles
 ==================
 */
-
 * {
     margin: 0;
     padding: 0;
@@ -44,4 +42,63 @@ Global styles
 
 body {
     font-family: var(--ff-primary);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875rem;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width:800px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
 }
