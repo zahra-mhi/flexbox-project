@@ -300,20 +300,127 @@ Services
 }
 
 @media screen and (min-width: 1170px) {
-    .service{
+    .service {
         display: flex;
         text-align: right;
     }
 
-    .service-icon{
+    .service-icon {
         align-self: start;
     }
 
-    .service-title{
+    .service-title {
         margin-right: 1rem;
     }
 
-    .service-text{
+    .service-text {
         margin-right: 1rem;
+    }
+}
+
+
+/* 
+==================
+Articles
+==================
+*/
+.article-card {
+    background-color: var(--clr-light);
+    margin-bottom: 2rem;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+}
+
+.article-card:hover {
+    transform: scale(1.02);
+    box-shadow: var(--dark-shadow);
+}
+
+.article-img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.article-img-container {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.article-category {
+    background-color: var(--clr-primary-2);
+    color: var(--clr-light);
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.3rem 1.1rem;
+    margin-bottom: 0;
+}
+
+.article-info {
+    padding: 1rem 2rem;
+}
+
+.article-text {
+    margin-bottom: 2.5rem;
+}
+
+.article-footer,
+.article-footer a {
+    color: var(--clr-primary-1);
+}
+
+.article-title h4 {
+    color: var(--clr-primary-1);
+}
+
+.article-title p,
+.article-footer p {
+    color: var(--clr-primary-1);
+    opacity: 0.6;
+}
+
+.article-info p {
+    color: var(--clr-primary-3);
+}
+
+.article-footer {
+    color: var(--clr-primary-2);
+}
+
+.article-footer,
+.article-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-footer a {
+    align-self: flex-start;
+    color: var(--clr-primary-2);
+}
+
+.article-btn {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .articles-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .article-card {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .article-img {
+        height: 15rem;
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .article-card {
+        flex: 0 0 calc(33.333% - 1rem);
     }
 }
