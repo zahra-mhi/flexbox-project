@@ -560,19 +560,18 @@ Footer
 }
 
 .footer-link:hover {
-    color: #658069;
+    color:#597960 ;
 }
 
 .footer-icon {
-    color: #658069;
+    color: var(--clr-primary-light);
     font-size: 2rem;
     margin-right: 1.5rem;
     transition: var(--transition);
 }
 
 .footer-icon:hover {
-    color: var(--clr-primary-light);
-    font-size: 2.2rem;
+    color:#597960 ;
 }
 
 
