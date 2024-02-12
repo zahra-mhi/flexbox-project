@@ -424,3 +424,60 @@ Articles
         flex: 0 0 calc(33.333% - 1rem);
     }
 }
+
+/* 
+==================
+Contact
+==================
+*/
+.section-contact{
+    background: var(--clr-light);
+}
+
+.contact-title{
+    color: var(--clr-primary-1);
+}
+
+.contact-text{
+    color: var(--clr-primary-3);
+}
+
+.contact-form{
+    display: flex;
+}
+
+.form-control{
+    flex: 1 1 auto;
+    color: var(--clr-primary-3);
+}
+
+.form-control::placeholder{
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+    color: inherit;
+}
+
+.form-control , 
+.btn-submit{
+    padding: 0rem 0.88rem;
+    height: 2rem;
+    border: transparent;
+}
+
+.btn-submit{
+    font-family: var(--ff-primary);
+}
+
+@media screen and (min-width: 992px) {
+    .contact-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-info , .contact-form {
+        flex: 1 1 calc(50% - 1rem);
+        align-self: center;
+    }
+}
+
