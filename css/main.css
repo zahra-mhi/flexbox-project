@@ -430,41 +430,41 @@ Articles
 Contact
 ==================
 */
-.section-contact{
+.section-contact {
     background: var(--clr-light);
 }
 
-.contact-title{
+.contact-title {
     color: var(--clr-primary-1);
 }
 
-.contact-text{
+.contact-text {
     color: var(--clr-primary-3);
 }
 
-.contact-form{
+.contact-form {
     display: flex;
 }
 
-.form-control{
+.form-control {
     flex: 1 1 auto;
     color: var(--clr-primary-3);
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     font-size: 1rem;
     font-family: var(--ff-primary);
     color: inherit;
 }
 
-.form-control , 
-.btn-submit{
+.form-control,
+.btn-submit {
     padding: 0rem 0.88rem;
     height: 2rem;
     border: transparent;
 }
 
-.btn-submit{
+.btn-submit {
     font-family: var(--ff-primary);
 }
 
@@ -475,9 +475,61 @@ Contact
         flex-wrap: wrap;
     }
 
-    .contact-info , .contact-form {
+    .contact-info,
+    .contact-form {
         flex: 1 1 calc(50% - 1rem);
         align-self: center;
     }
 }
 
+/* 
+==================
+Gallery
+==================
+*/
+.gallery-img-container {
+    position: relative;
+    background-color: var(--clr-primary-3);
+}
+
+.gallery-img {
+    height: 17rem;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.gallery-icon {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--clr-light);
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%, 50%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-icon {
+    opacity: 1;
+}
+
+.gallery-img-container:hover .gallery-img {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-center {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .gallery-img-container {
+        flex: 0 0 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .gallery-img-container {
+        flex: 0 0 25%;
+    }
+}
