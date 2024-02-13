@@ -22,10 +22,56 @@
     <!-- Header -->
     <header>
         <!-- navbar -->
-        <div></div>
+        <nav class="navbar">
+            <div class="navbar-center">
+                <div class="nav-header">
+                    <h3>Green World</h3>
+                    <button class="nav-toggle" id="nav-toggle" type="button">
+                        <i class="bi bi-list-nested"></i>
+                    </button>
+                </div>
+
+                <ul class="nav-links" id="nav-links">
+                    <li>
+                        <a class="nav-link scroll-link" href="#home">صفحه اصلی</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#about">درباره ما</a>
+                    </li>
+
+                    <li>
+                        <a class="nav-link scroll-link" href="#services">خدمات</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#articles">مقالات</a>
+                    </li>
+                    <li>
+                        <a class="nav-link scroll-link" href="#gallery">گالری</a>
+                    </li>
+                </ul>
+
+                <ul class="nav-icons">
+                    <li>
+                        <a class="nav-icon" href="#">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-icon" href="#">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <!-- hero -->
-        <div class="hero">
+        <div class="hero" id="home">
             <div class="hero-banner">
                 <h1>دنیای سبز</h1>
                 <p>
@@ -40,7 +86,7 @@
     <!-- End Header -->
 
     <!-- About -->
-    <section class="section">
+    <section class="section" id="about">
         <div class="section-title">
             <h2>درباره ما</h2>
         </div>
@@ -69,7 +115,7 @@
     <!-- End About -->
 
     <!-- Services -->
-    <section class="section section-services">
+    <section class="section section-services" id="services">
 
         <div class="section-title">
             <h2>خدمات</h2>
@@ -120,7 +166,7 @@
     <!-- End Services -->
 
     <!-- Articles -->
-    <section class="section">
+    <section class="section" id="articles">
         <div class="section-title">
             <h2>مقالات</h2>
         </div>
@@ -257,7 +303,7 @@
     <!-- End Contact -->
 
     <!-- Gallery -->
-    <section>
+    <section id="gallery">
         <div class="gallery-center">
             <article class="gallery-img-container">
                 <img class="gallery-img" src="./images/gallery-1.jpg" alt="gallery-img">
@@ -323,20 +369,20 @@
         <div class="section-center">
             <ul class="footer-links">
                 <li>
-                    <a class="footer-link" href="#">صفحه اصلی</a>
+                    <a class="footer-link scroll-link" href="#home">صفحه اصلی</a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#">درباره ما</a>
+                    <a class="footer-link scroll-link" href="#about">درباره ما</a>
                 </li>
 
                 <li>
-                    <a class="footer-link" href="#">خدمات</a>
+                    <a class="footer-link scroll-link" href="#services">خدمات</a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#">مقالات</a>
+                    <a class="footer-link scroll-link" href="#articles">مقالات</a>
                 </li>
                 <li>
-                    <a class="footer-link" href="#">گالری</a>
+                    <a class="footer-link scroll-link" href="#gallery">گالری</a>
                 </li>
             </ul>
 
@@ -367,7 +413,7 @@
     <!-- End Footer -->
 
 
-
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

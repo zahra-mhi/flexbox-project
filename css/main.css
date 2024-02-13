@@ -138,6 +138,134 @@ p {
 
 /* 
 ==================
+Navbar
+==================
+*/
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: white;
+    width: 100%;
+    box-shadow: var(--dark-shadow);
+    z-index: 2;
+}
+
+.navbar-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.nav-header h3 {
+    margin-bottom: 0;
+    color: var(--clr-primary-1);
+}
+
+.nav-toggle {
+    font-size: 1.75rem;
+    background: transparent;
+    border: transparent;
+    color: var(--clr-primary-1);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.nav-toggle:hover {
+    transform: scale(1.2);
+}
+
+.nav-links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links {
+    height: 285px;
+}
+
+.nav-link {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--clr-primary-2);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-link:hover {
+    background-color: var(--clr-primary-2);
+    color: var(--clr-light);
+    padding-right: 2.5rem;
+}
+
+.nav-icons {
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .navbar-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-links {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-link {
+        padding: 0;
+        color: var(--clr-primary-1);
+        margin-right: 0.75rem;
+    }
+
+    .nav-link:hover {
+        color: var(--clr-primary-3);
+        padding-right: 0;
+        background: transparent;
+    }
+
+    .nav-icons {
+        display: flex;
+    }
+
+    .nav-icon {
+        margin-right: 0.75rem;
+        color: var(--clr-primary-1);
+        cursor: pointer;
+        font-size: 1.25rem;
+    }
+
+    .nav-icon:hover {
+        color: var(--clr-primary-3);
+    }
+}
+
+
+/* 
+==================
 Hero
 ==================
 */
@@ -560,7 +688,7 @@ Footer
 }
 
 .footer-link:hover {
-    color:#597960 ;
+    color: #597960;
 }
 
 .footer-icon {
@@ -571,8 +699,5 @@ Footer
 }
 
 .footer-icon:hover {
-    color:#597960 ;
+    color: #597960;
 }
-
-
-
